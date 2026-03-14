@@ -1,1 +1,47 @@
+# Ignore sensitive/local runtime data
+loginData.dat
 
+# C++ compiler outputs (common)
+*.o
+*.obj
+*.lo
+*.slo
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Dependency files
+*.d
+
+# Debug symbols
+*.dSYM/
+*.pdb
+*.idb
+
+# Build directories
+build/
+cmake-build-*/
+CMakeFiles/
+
+# CMake generated files
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE/editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
