@@ -244,6 +244,13 @@ string decryptString(string str)
 
 void ensureFileExists(string path)
 {
+    filesystem::path filePath(path);
+    
+    if (!filesystem::exists(filePath.parent_path()))
+    {
+        filesystem::create_directories(filePath.parent_path()); // ✅ creates ../data/
+    }
+
     fstream file(path, ios::app | ios::binary);
     file.close();
 }
