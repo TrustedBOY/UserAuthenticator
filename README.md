@@ -15,14 +15,14 @@ Supports user registration, login, and persistent encrypted storage.
 - Input validation with re-prompt on invalid entries
 
 ## Project Structure
-
+```
 project/
 ├── data/
 │   └── loginData.dat       # auto-generated, stores encrypted user records
 ├── src/
 │   └── main.cpp
 └── README.md
-
+```
 ## How Data is Stored
 
 Each user record is stored as one line in the binary file:
